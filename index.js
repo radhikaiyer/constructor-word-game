@@ -1,6 +1,7 @@
 var Word = require("./word.js");
 
 var inquirer = require("inquirer");
+var clc = require('cli-color');
 var figlet = require('figlet');
 var isLetter = require('is-letter');
 const boxen = require('boxen');
@@ -47,7 +48,7 @@ figlet("Hangman Game", function(err, data) {
     //Welcome screen text.
     console.log(gameTextColor("Welcome to the Hangman Game!"));
     console.log(gameTextColor("Theme is... Major US cities."));
-    
+
     //Game instructions.
     var howToPlay = 
     "==========================================================================================================" + "\r\n" +
@@ -251,7 +252,7 @@ function checkIfUserWon() {
 
 }
 
-//Create a function that will ask user if they want to play again at the end of the game.
+//Asking if the player wants to play again at the end of the game
 function playAgain() {
 	var playGameAgain = [
 	 {

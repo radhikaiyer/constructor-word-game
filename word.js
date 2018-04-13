@@ -1,9 +1,9 @@
 var Letter = require("./Letter");
 
 var Word = function(myWord) {
-	//Take chosen word from word list.
+	//Taking a word from the chosen list.
 	this.myWord = myWord;
-	//This is an array of letters representing the letters of the random chosen word.
+	//Array of letters representing the letters of the random chosen word.
 	this.letters = [];
 	
 	this.underscores = [];
