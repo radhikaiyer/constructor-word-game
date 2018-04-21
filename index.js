@@ -9,7 +9,7 @@ const boxen = require('boxen');
 //Colors for choices
 var incorrect = clc.red.bold;
 var correct = clc.green.bold;
-var gameTextColor = clc.cyanBright;
+var gameTextColor = clc.black.bold;
 
 //When user guesses correctly, set this variable to true for that letter. The default value will be false.
 var userGuessedCorrectly = false;
